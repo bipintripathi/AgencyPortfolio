@@ -30,7 +30,8 @@
         "description" : "We are a team of talented designers making websites with Bootstrap, React, Wordpress and more.",
         "showBanner": true,
         "service": {           
-            "heading": "Our Services",      
+            "title": "Our Services", 
+            "description": "We are a team of talented designers making websites with Bootstrap, React, Wordpress ",     
             "services": [
                 {
                     "title": "Web Design",
@@ -57,8 +58,12 @@
                     "description": "We design and develop e-commerce websites that are user-friendly and easy to navigate.",
                     "images": "images/s5.png" 
                 }
-            ]
+            ],
+            "button": "Read More",
+            "link": "/service"
+
         },
+
         
         "about": {
             "title": "About Us",
