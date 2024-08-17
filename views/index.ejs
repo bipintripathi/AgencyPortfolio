@@ -55,20 +55,20 @@
         <div class="detail-box pr-md-2">
           <div class="heading_container">
             <h2 class="">
-              About Us
+              <%= pageData.about.title %>
             </h2>
           </div>
           <p class="detail_p_mt">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+            <%= pageData.about.description %>
           </p>
-          <a href="about.html" class="">
-            Read More
+          <a href="<%= pageData.about.link %>" class="">
+            <%= pageData.about.button %>
           </a>
         </div>
       </div>
       <div class="col-md-6 px-0">
         <div class="img-box ">
-          <img src="images/about-img.jpg" class="box_img" alt="about img">
+          <img src="<%= pageData.about.image %>" class="box_img" alt="about img">
         </div>
       </div>
     </div>
@@ -81,59 +81,30 @@
   <div class="container">
     <div class="heading_container heading_center">
       <h2>
-        Our Team
+        <%= pageData.team.title %>
       </h2>
       <p>
-        Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla mauris
-        iaculis. Erat eget vitae malesuada, tortor tincidunt porta lorem lectus.
+       <%= pageData.team.description %>
       </p>
     </div>
     <div class="row">
+      <% pageData.team.teamMembers.forEach((team, index) => { %>
       <div class="col-md-4 col-sm-6 mx-auto">
         <div class="box">
           <div class="img-box">
-            <img src="images/t1.jpg" alt="">
+            <img src="<%= team.images %>" alt="">
           </div>
           <div class="detail-box">
             <h5>
-              Martin Anderson
+              <%= team.name %>
             </h5>
             <h6 class="">
-              supervisor
+              <%= team.designation %>
             </h6>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 mx-auto">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/t2.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Denny Butler
-            </h5>
-            <h6 class="">
-              supervisor
-            </h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 mx-auto">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/t3.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Nathan Mcpherson
-            </h5>
-            <h6 class="">
-              supervisor
-            </h6>
-          </div>
-        </div>
-      </div>
+    <% }); %>
     </div>
   </div>
 </section>
@@ -146,13 +117,13 @@
     <div class="row">
       <div class="col-md-6 px-0">
         <div class="img-box ">
-          <img src="images/contact-img.jpg" class="box_img" alt="about img">
+          <img src="<%= pageData.contact.image %>" class="box_img" alt="about img">
         </div>
       </div>
       <div class="col-md-5 mx-auto">
         <div class="form_container">
           <div class="heading_container heading_center">
-            <h2>Get In Touch</h2>
+            <h2> <%= pageData.contact.title %> </h2>
           </div>
           <form action="">
             <div class="form-row">
@@ -201,25 +172,26 @@
   <div class="container ">
     <div class="heading_container heading_center">
       <h2>
-        Testimonial
+        <%= pageData.testimonial.title %>
       </h2>
       <hr>
     </div>
     <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <% pageData.testimonial.reviews.forEach((review, index) => { %>
+        <div class="<%= index === 0 ? 'carousel-item active' : 'carousel-item' %>">
           <div class="row">
             <div class="col-lg-7 col-md-9 mx-auto">
               <div class="client_container ">
                 <div class="img-box">
-                  <img src="images/client.jpg" alt="">
+                  <img src="<%= review.image %>" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Jone Mark
+                    <%= review.name %>
                   </h5>
                   <p>
-                    Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+                  <%= review.feedback %>
                   </p>
                   <span>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -229,50 +201,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-lg-7 col-md-9 mx-auto">
-              <div class="client_container ">
-                <div class="img-box">
-                  <img src="images/client.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Jone Mark
-                  </h5>
-                  <p>
-                    Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-                  </p>
-                  <span>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-lg-7 col-md-9 mx-auto">
-              <div class="client_container ">
-                <div class="img-box">
-                  <img src="images/client.jpg" alt="">
-                </div>
-                <div class="detail-box">
-                  <h5>
-                    Jone Mark
-                  </h5>
-                  <p>
-                    Editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-                  </p>
-                  <span>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <% }); %>
       </div>
       <div class="carousel_btn-box">
         <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">

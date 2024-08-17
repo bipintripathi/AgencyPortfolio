@@ -66,28 +66,28 @@
 
         
         "about": {
-            "title": "About Us",
-            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or",
+            "title": "About Me",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
             "image": "images/about-img.jpg",
             "button": "Read More",
             "link": "/about"
         },
         "team": {
             "title": "Our Team",
-            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
             "teamMembers": [
                 {
-                    "name": "John Doe",
+                    "name": "Subhajit Chatterjee",
                     "designation": "Web Designer",
                     "images": "images/t1.jpg"
                 },
                 {
-                    "name": "Denny Butler",
+                    "name": "Bipin Tripathi",
                     "designation": "Web Developer",
                     "images": "images/t2.jpg"
                 },
                 {
-                    "name": "Mike Doe",
+                    "name": "Saurabh Dubey",
                     "designation": "Web Developer",
                     "images": "images/t3.jpg"
                 }
@@ -96,6 +96,27 @@
         "contact": {
             "title": "Contact Us",
             "image": "images/contact-img.jpg"
-        }        
+        },
+        
+        "testimonial": {
+            "title": "Customer feedback",
+            "reviews" : [
+                {
+                    "image": "images/s1.png",
+                    "name": "Bubu",
+                    "feedback": "nice developer"
+                },
+                {
+                    "image": "images/s2.png",
+                    "name": "bipin",
+                    "feedback": "smart developer"
+                },
+                {
+                    "image": "images/s3.png",
+                    "name": "subhajit",
+                    "feedback": "sexy developer"
+                }
+            ]
+        }
     }
 }
