@@ -30,6 +30,9 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -99,8 +102,8 @@
       <div class="info_top">
         <div class="row">
           <div class="col-md-3 ">
-            <a class="navbar-brand" href="index.html">
-              Finter
+            <a class="navbar-brand" href="/">
+              <%= pageData.name %>
             </a>
           </div>
           <div class="col-md-5 ">
@@ -108,29 +111,29 @@
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  <%= pageData.location %>
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  +01 1234567890
+                  <%= pageData.phone %>
                 </span>
               </a>
             </div>
           </div>
           <div class="col-md-4 ">
             <div class="social_box">
-              <a href="">
+              <a href="<%= pageData.facebook %>">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="<%= pageData.twitter %>">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="<%= pageData.linkedin %>">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="<%= pageData.instagram %>">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
@@ -142,37 +145,21 @@
           <div class="col-lg-3 col-md-6">
             <div class="info_detail">
               <h5>
-                Company
+                <%= pageData.name %>
               </h5>
               <p>
-                Randomised words which don't look even slightly believable. If you are going to use a passage of
-                Lorem
-                Ipsum, you need to be sure
+                <%= pageData.description %>
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="info_form">
-              <h5>
-                NEWSLETTER
-              </h5>
-              <form action="">
-                <input type="text" placeholder="Enter Your Email" />
-                <button type="submit">
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </div>
+          
           <div class="col-lg-4 col-md-6">
             <div class="info_detail">
               <h5>
-                Services
+                <%= pageData.service.title %>
               </h5>
               <p>
-                Randomised words which don't look even slightly believable. If you are going to use a passage of
-                Lorem
-                Ipsum, you need to be sure
+                <%= pageData.service.description %>
               </p>
             </div>
           </div>
@@ -183,27 +170,27 @@
               </h5>
               <ul class="info_menu">
                 <li>
-                  <a href="index.html">
+                  <a href="/">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="about.html">
+                  <a href="/about">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="service.html">
+                  <a href="/service">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="team.html">
+                  <a href="/team">
                     Team
                   </a>
                 </li>
                 <li class="mb-0">
-                  <a href="contact.html">
+                  <a href="/contact">
                     Contact Us
                   </a>
                 </li>

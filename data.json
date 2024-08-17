@@ -1,9 +1,16 @@
 {
     "global" : {
-        "name" : "Ezzecloud Portfolio",
+        "name" : "Ezecloud",
         "favicon": "images/fevicon.png",
         "email": "demo@gmail.com",
-        "phone": "+91 1234567890",
+        "phone": "+91 7980571601",
+        "location": "Kolkata",
+        "facebook":"https://www.facebook.com",
+        "twitter":"https://x.com/",
+        "linkedin": "https://in.linkedin.com/",
+        "instagram": "https://www.instagram.com/",
+
+
         "banners": [
             {
                 "title": "Web Design",
@@ -31,7 +38,7 @@
         "showBanner": true,
         "service": {           
             "title": "Our Services", 
-            "description": "We are a team of talented designers making websites with Bootstrap, React, Wordpress ",     
+            "description": "We provide talented design making websites with Bootstrap, React, Wordpress ",     
             "services": [
                 {
                     "title": "Web Design",
@@ -102,21 +109,27 @@
             "title": "Customer feedback",
             "reviews" : [
                 {
-                    "image": "images/s1.png",
+                    "image": "images/c-2.png",
                     "name": "Bubu",
-                    "feedback": "nice developer"
+                    "feedback": "We love our new website! Ezecloud created a design that’s both attractive and easy to use. Our visitors have noticed the difference. Thanks for a job well done!"
                 },
                 {
-                    "image": "images/s2.png",
-                    "name": "bipin",
-                    "feedback": "smart developer"
+                    "image": "images/c-1.png",
+                    "name": "Bipin",
+                    "feedback": "Great experience with Ezecloud. The website is fast, sleek, and exactly what we needed. Their support has been fantastic. Would definitely work with them again!"
                 },
                 {
-                    "image": "images/s3.png",
-                    "name": "subhajit",
-                    "feedback": "sexy developer"
+                    "image": "images/c-3.png",
+                    "name": "Subhajit",
+                    "feedback": "The team at Ezecloud transformed our ideas into a beautiful, functional website. Their design and development skills are top-notch. Highly recommended!"
                 }
             ]
+        },
+        "copyRight" :{
+            "title" : "All Rights Reserved",
+            "developedBy": "EezeeCloud",
+            "link" : "/"
+
         }
     }
 }

@@ -2,59 +2,30 @@
   <div class="container">
     <div class="heading_container heading_center">
       <h2>
-        Our Team
+        <%= pageData.team.title %>
       </h2>
       <p>
-        Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla mauris
-        iaculis. Erat eget vitae malesuada, tortor tincidunt porta lorem lectus.
+       <%= pageData.team.description %>
       </p>
     </div>
     <div class="row">
+      <% pageData.team.teamMembers.forEach((team, index) => { %>
       <div class="col-md-4 col-sm-6 mx-auto">
         <div class="box">
           <div class="img-box">
-            <img src="images/t1.jpg" alt="">
+            <img src="<%= team.images %>" alt="">
           </div>
           <div class="detail-box">
             <h5>
-              Martin Anderson
+              <%= team.name %>
             </h5>
             <h6 class="">
-              supervisor
+              <%= team.designation %>
             </h6>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 mx-auto">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/t2.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Denny Butler
-            </h5>
-            <h6 class="">
-              supervisor
-            </h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 mx-auto">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/t3.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Nathan Mcpherson
-            </h5>
-            <h6 class="">
-              supervisor
-            </h6>
-          </div>
-        </div>
-      </div>
+    <% }); %>
     </div>
   </div>
 </section>

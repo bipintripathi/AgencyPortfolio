@@ -1,12 +1,12 @@
 
 const express = require('express');
-// const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 const path = require('path')
 
 
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
-// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 const PORT = 3000;
 

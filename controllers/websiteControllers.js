@@ -19,7 +19,10 @@ exports.home = (req, res) => {
 // About Page
 exports.about = (req, res) => {
     try {
-        res.render('about')
+        const {global, home} = data;
+        res.render('about',{
+            pageData: {...global, ...home}
+        })
     } catch (error) {
         console.log("error", error) 
         res.end("500 Server Error");
@@ -29,7 +32,10 @@ exports.about = (req, res) => {
 // Services Page
 exports.services = (req, res) => {
     try {
-        res.render('service')
+        const { global,home } = data;
+        res.render('service',{
+            pageData: {...global,...home}
+        })
     } catch (error) {
         console.log("error", error) 
         res.end("500 Server Error");
@@ -39,7 +45,10 @@ exports.services = (req, res) => {
 // Team Page
 exports.team = (req,res)=>{
     try{
-        res.render('team')
+        const { global,home } = data;
+        res.render('team',{
+            pageData:{ ...global,...home}
+        })
     }catch(error){
         console.log("error",error)
         res.end("500 Server Error")
@@ -49,7 +58,10 @@ exports.team = (req,res)=>{
 // Contact Page
 exports.contact = (req, res) => {
     try {
-        res.render('contact')
+        const { global,home } = data;
+        res.render('contact',{
+            pageData:{...global,...home}
+        })
     } catch (error) {
         console.log("error", error) 
         res.end("500 Server Error");
@@ -58,7 +70,7 @@ exports.contact = (req, res) => {
 
 // Contact Page Send Email
 exports.contactEmail = (req, res) => {
-    const { name,phone, email, message } = req.body;    
+    const { name,phone,service, email, message } = req.body;    
 
     // Create a transporter object using Gmail SMTP
     let transporter = nodemailer.createTransport({
@@ -74,7 +86,7 @@ exports.contactEmail = (req, res) => {
         from: email,
         to: ['bipintripathi786@gmail.com', email], // Your email address to receive the contact form messages
         subject: 'Contact Form Submission',
-        text: `Name: ${name}\n Phone: ${phone}\nEmail: ${email}\nMessage: ${message}`
+        text: `Name: ${name}\n Phone: ${phone}\nService: ${service}\nEmail: ${email}\nMessage: ${message}`
     };
 
     // Send mail with defined transport object
