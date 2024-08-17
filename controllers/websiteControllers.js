@@ -1,9 +1,15 @@
 const nodemailer = require('nodemailer');
 
+// import data.json
+const data = require('../data.json')
+
 // Home Page
 exports.home = (req, res) => {
-    try {
-        res.render('index')
+    try { 
+        const {global, home} = data;       
+        res.render('index', {
+            pageData: {...global, ...home}
+        });
     } catch (error) {
         console.log("error", error) 
         res.end("500 Server Error");

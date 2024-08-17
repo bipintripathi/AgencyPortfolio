@@ -1,0 +1,96 @@
+{
+    "global" : {
+        "name" : "Ezzecloud Portfolio",
+        "favicon": "images/fevicon.png",
+        "email": "demo@gmail.com",
+        "phone": "+91 1234567890",
+        "banners": [
+            {
+                "title": "Web Design",
+                "description": "We design websites that are user-friendly and easy to navigate.",
+                "button": "Read More",
+                "link": "/service"
+            },
+            {
+                "title": "Web Development",
+                "description": "We develop websites that are mobile-friendly and responsive.",
+                "button": "Read More",
+                "link": "/service"                
+            },
+            {
+                "title": "E-commerce",
+                "description": "We design and develop e-commerce websites that are user-friendly and easy to navigate.",
+                "button": "Read More",
+                "link": "/service"
+            }
+        ]     
+    },
+    "home" : {
+        "title" : "Welcome to Ezzecloud Portfolio",
+        "description" : "We are a team of talented designers making websites with Bootstrap, React, Wordpress and more.",
+        "showBanner": true,
+        "service": {           
+            "heading": "Our Services",      
+            "services": [
+                {
+                    "title": "Web Design",
+                    "description": "We design websites that are user-friendly and easy to navigate.",               
+                    "images": "images/s1.png"               
+                },
+                {
+                    "title": "Web Development",
+                    "description": "We develop websites that are mobile-friendly and responsive.",
+                    "images": "images/s2.png"
+                },
+                {
+                    "title": "E-commerce",
+                    "description": "We design and develop e-commerce websites that are user-friendly and easy to navigate.",
+                    "images": "images/s3.png" 
+                },
+                {
+                    "title": "Shopify",
+                    "description": "We design and develop e-commerce websites that are user-friendly and easy to navigate.",
+                    "images": "images/s4.png" 
+                },
+                {
+                    "title": "Wordpress",
+                    "description": "We design and develop e-commerce websites that are user-friendly and easy to navigate.",
+                    "images": "images/s5.png" 
+                }
+            ]
+        },
+        
+        "about": {
+            "title": "About Us",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or",
+            "image": "images/about-img.jpg",
+            "button": "Read More",
+            "link": "/about"
+        },
+        "team": {
+            "title": "Our Team",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or",
+            "teamMembers": [
+                {
+                    "name": "John Doe",
+                    "designation": "Web Designer",
+                    "images": "images/t1.jpg"
+                },
+                {
+                    "name": "Denny Butler",
+                    "designation": "Web Developer",
+                    "images": "images/t2.jpg"
+                },
+                {
+                    "name": "Mike Doe",
+                    "designation": "Web Developer",
+                    "images": "images/t3.jpg"
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contact Us",
+            "image": "images/contact-img.jpg"
+        }        
+    }
+}
