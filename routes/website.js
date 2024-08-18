@@ -3,8 +3,7 @@ const express = require('express');
 const router =  express.Router();
 const app = express();
 
-// Use bodyParser to parse form data
- app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const websiteController = require('../controllers/websiteControllers')
  const recaptchaMiddleware = require('../middleware/recaptchaMiddleware')

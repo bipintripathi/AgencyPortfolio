@@ -125,7 +125,8 @@
           <div class="heading_container heading_center">
             <h2> <%= pageData.contact.title %> </h2>
           </div>
-          <form action="/contactEmail" method="POST">
+          <form action="/api/contact" method="POST">            
+
             <div class="form-row">
               <div class="form-group col">
                 <input type="text" class="form-control" name="name" placeholder="Your Name" />
